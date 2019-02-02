@@ -352,7 +352,7 @@ button,
   button.primary,
   .button.primary {
     box-shadow: none;
-    background-color: #ce1b28;
+    background-color: #EC3C1E;
     color: #ffffff !important; }
     input[type="submit"].primary:hover,
     input[type="reset"].primary:hover,
@@ -2489,9 +2489,9 @@ body {
 
 @media screen and (max-width: 980px) {
   /*body {
-    padding-top: 44px; }
+    padding-top: 44px; }*/
 
-   #header {
+    /* #header {
     height: 44px;
     line-height: 44px; } }*/
 @media screen and (max-width: 480px) {
