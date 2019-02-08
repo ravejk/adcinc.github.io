@@ -133,6 +133,16 @@ em, i {
 p {
   margin: 0 0 2rem 0; }
 
+.contact-list{
+  margin-bottom: 3rem;
+}
+.contact-list p{
+margin-bottom: 0 !important;
+}
+.contact-list h3{
+margin: 0 0 0 0;
+}
+
 header.special {
   text-align: center;
   margin-bottom: 3rem; }
@@ -141,14 +151,29 @@ header.special {
     margin-left: auto;
     margin-right: auto; }
 
-    header.special-header {
+
+header.special-header {
   text-align: center;
-  margin-top: 3rem;
   margin-bottom: 3rem; }
-  header.special-header p {
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto; }
+  @media screen and (max-width: 1680px) {
+    header.special-header {
+      text-align: center;
+  margin-bottom: 3rem; } }
+  @media screen and (max-width: 980px) {
+    header.special-header {
+      text-align: center;
+  margin-bottom: 2rem; } }
+  @media screen and (max-width: 480px) {
+    header.special-header {
+      text-align: center;
+  margin-bottom: 0rem;
+  margin-top: .75rem;  }
+  header.special-header p{
+      margin-bottom: 0;  } }
+
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
@@ -284,9 +309,11 @@ button,
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 500;
   height: 3.25rem;
   line-height: 3.25rem;
+  letter-spacing: 0.025rem;
   padding: 0 1.75rem;
   text-align: center;
   text-decoration: none;
@@ -718,8 +745,8 @@ table.alt tbody tr td {
   .highlights .content {
     /*border-radius: 4px;*/
     height: 100%;
-    padding: 1.5rem;
-    padding-bottom: 2.5rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
     text-align: center; }
     .content .close h3{
       text-align: center;
@@ -742,7 +769,7 @@ table.alt tbody tr td {
       text-align: center;
     }
     .highlights .content .icon {
-      font-size: 4rem; }
+      font-size: 3.5rem; }
   .highlights > div > :last-child {
     margin-bottom: 0; }
   @media screen and (max-width: 980px) {
@@ -1831,12 +1858,26 @@ ul.icons {
   z-index: 1; }
   @media screen and (max-width: 1280px) {
     .wrapper {
-      padding: 1rem 0 2rem 0 ; } }
+      padding: 3rem 0 1.5rem 0 ; } }
   @media screen and (max-width: 736px) {
     .wrapper {
-      padding: .5rem 0 1rem 0 ; } }
+      padding: 2rem 0 1rem 0 ; } }
   @media screen and (max-width: 480px) {
     .wrapper {
+      padding: 1rem 0 0rem 0 ; } }
+
+.wrapper-main {
+  padding: 1rem 0 1rem 0 ;
+  position: relative;
+  z-index: 1; }
+  @media screen and (max-width: 1280px) {
+    .wrapper-main {
+      padding: 1rem 0 1.5rem 0 ; } }
+  @media screen and (max-width: 736px) {
+    .wrapper-main {
+      padding: 0rem 0 1rem 0 ; } }
+  @media screen and (max-width: 480px) {
+    .wrapper-main {
       padding: 0rem 0 0rem 0 ; } }
 
 /* Banner */
@@ -1863,8 +1904,9 @@ ul.icons {
   background-size: cover;
   border-top: 0;
   display: -ms-flexbox;
-  height: 25rem !important;
-  min-height: 25rem;
+  height: 20rem !important;
+  min-height: 20rem;
+  padding-bottom: 2rem;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -2024,7 +2066,7 @@ ul.icons {
     #banner a:hover {
       color: #ffffff; }
       #banner img{
-        width: 50%;
+        width: 45%;
     /*    margin-bottom: 50px;*/
       }
   #banner video {
@@ -2122,6 +2164,7 @@ ul.icons {
   position: relative;
   text-align: center;
   z-index: 1; }
+
   #cta input, #cta select, #cta textarea {
     color: #ffffff; }
   #cta a {
@@ -2256,7 +2299,8 @@ ul.icons {
     z-index: 3; }
   @media screen and (max-width: 980px) {
     #cta {
-      background-attachment: scroll; } }
+      background-attachment: scroll;
+      padding: 2rem 0 0 0; } }
 
 /* Footer */
 #footer {
@@ -2738,13 +2782,17 @@ body {
   border-radius: 4px;
   /*box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);*/
   margin-bottom: 2rem;
+  min-height: 40rem;
+  height: 40rem !important;
   padding: 3rem; }
   @media screen and (max-width: 980px) {
     #main .content {
       padding: 2rem; } }
   @media screen and (max-width: 480px) {
     #main .content {
-      padding: 1.5rem; } }
+      padding: 1.5rem;
+      min-height: 40rem;
+      height: 40rem !important; } }
 
     #main .inner .content img{
       margin: 0 auto;
